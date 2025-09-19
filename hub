@@ -1,0 +1,14 @@
+local MM2_PLACE_ID = 142823291
+local ARSENAL_PLACE_ID = 286090429
+
+local currentPlaceId = game.PlaceId
+
+if currentPlaceId == MM2_PLACE_ID then
+    print("loading script")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cakein228/Penguin/refs/heads/main/MM2"))()
+elseif currentPlaceId == ARSENAL_PLACE_ID then
+    print("loading script")
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/cakein228/Penguin/refs/heads/main/Arsenal"))()
+else
+    print("Not support game")
+end
